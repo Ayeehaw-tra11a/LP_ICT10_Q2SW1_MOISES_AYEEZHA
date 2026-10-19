@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <title>Q2SW1</title>
+    <style>
+    body {
+        margin: 0;
+        background: #0e0d12;
+        color: white;
+        font-family: 'Rajdhani', sans-serif;
+        text-align: center;
+    }
+
+    header {
+        padding: 35px 0 20px;
+    }
+
+    
+    h1 {
+        margin: 0;
+        color: #303b62;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+
+    header p {
+        margin-top: 5px;
+        color: #f5f2f2;
+        font-size: 11px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    main {
+        width: 295px;
+        margin: 5px auto;
+        padding: 25px;
+        background: #202126;
+        border: 2px solid #d6d1ba;
+        border-top: 3px solid #211e34;
+        border-radius: 8px;
+    }
+
+    form input[type="text"] {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 10px;
+        background: #212020;
+        color: white;
+        border: 1px solid #303b62;
+        border-radius: 4px;
+        font-family: 'Rajdhani', sans-serif;
+    }
+
+    form input[type="button"] {
+        width: 96%;
+        padding: 10px;
+        background: #212020;
+        color: #303b62;
+        border: 1px solid #303b62;
+        border-radius: 5px;
+        font-family: 'Orbitron', sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    form input[type="button"]:hover {
+        background: #414c66;
+    }
+
+    #result {
+        margin-top: 18px;
+        padding: 12px;
+        background: #67848f;
+        color: #fcfcff;
+        border-left: 4px solid #3e5f64;
+        border-radius: 5px;
+    }
+
+    footer {
+        margin-top: 120px;
+        padding: 15px;
+        background: #303b62;
+        color: #080808;
+        font-size: 11px;
+    }
+
+    footer span {
+        color: #000000;
+    }
+</style>
+    </style>
+</head>
+<body>
+    <header>
+        <div class="reactor"></div>
+        <h1>COCC</h1>
+        <p>Candidate Verification System</p>
+    </header>
+
+    <main>
+        <form>
+            <input type="text" id="first_name" placeholder="enter your first name" required><br>
+            <input type="text" id="last_name" placeholder="enter your last name" required><br>
+            <input type="button" py-click="candidate_checker" value="Enter">
+        </form>
+        <div id="result"></div>
+    </main>
+    <footer>
+       &copy: 2026 <span>Corps Of Cadet Officers LP</span> &bull; Seatwork 1 &bull; 2nd Quarter
+    </footer>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
